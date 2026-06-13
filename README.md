@@ -3,7 +3,7 @@
 > 15+ free online tools for students, developers and professionals.
 > No sign-up. No ads. No limits. 100% browser-based.
 
-Live Site: https://creativestack-web.github.io/toolkit-pro/#/
+Live Site: https://creativestack-web.github.io/toolkit-pro/
 
 ---
 
@@ -59,7 +59,7 @@ Live Site: https://creativestack-web.github.io/toolkit-pro/#/
 
 ## Getting Started
 
-Visit the live site: https://creativestack-web.github.io/toolkit-pro/#/
+Visit the live site: https://creativestack-web.github.io/toolkit-pro/
 
 Or run locally — clone the repo and open index.html in any browser.
 No build tools. No npm install. No dependencies. Just open and use!
@@ -97,7 +97,7 @@ Zero frameworks. Zero dependencies. Zero build steps.
 - All tool inputs stay in your browser
 - QR codes generated via QR Server API over HTTPS
 
-Full Privacy Policy: https://creativestack-web.github.io/toolkit-pro/#/privacy.html
+Full Privacy Policy: https://creativestack-web.github.io/toolkit-pro/privacy.html
 
 ---
 
@@ -123,8 +123,8 @@ Full Privacy Policy: https://creativestack-web.github.io/toolkit-pro/#/privacy.h
 
 ## Contact
 
-Website: https://creativestack-web.github.io/toolkit-pro/#/
-Contact Form: https://creativestack-web.github.io/toolkit-pro/#/contact.html
+Website: https://creativestack-web.github.io/toolkit-pro/
+Contact Form: https://creativestack-web.github.io/toolkit-pro/contact.html
 
 ---
 
@@ -138,4 +138,4 @@ Open source and free to use, modify and distribute.
 
 Built with love — Free forever ⚡
 
-Launch ToolKit Pro: https://creativestack-web.github.io/toolkit-pro/#/
+Launch ToolKit Pro: https://creativestack-web.github.io/toolkit-pro/
