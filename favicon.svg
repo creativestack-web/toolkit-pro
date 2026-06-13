@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- ToolKit Pro · Variant 1 · Minimal TP · Navy #0F172A -->
+  <!-- Usage: <link rel="icon" type="image/svg+xml" href="favicon-v1-minimal.svg"> -->
+  <rect width="32" height="32" rx="7" fill="#0F172A"/>
+  <rect x="1" y="1" width="30" height="30" rx="6" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <!-- T crossbar -->
+  <rect x="5"  y="7"   width="11" height="3"    rx="1"   fill="white"/>
+  <!-- T stem -->
+  <rect x="8.5" y="9.5" width="3"  height="12"  rx="1"   fill="white"/>
+  <!-- P vertical stroke -->
+  <rect x="17"  y="7"   width="3"  height="15"  rx="1"   fill="white"/>
+  <!-- P top bar -->
+  <rect x="17"  y="7"   width="9"  height="3"   rx="1"   fill="white"/>
+  <!-- P bowl -->
+  <rect x="23"  y="7"   width="3"  height="8"   rx="1.5" fill="white"/>
+  <!-- P mid bar -->
+  <rect x="17"  y="11.5" width="9" height="3"   rx="1"   fill="white"/>
+</svg>

@@ -1,0 +1,67 @@
+# ============================================================
+# robots.txt — ToolKit Pro
+# https://creativestack-web.github.io/toolkit-pro/#
+# ============================================================
+
+# ── All well-behaved crawlers ──
+User-agent: *
+Allow: /
+
+# Block access to any config or hidden files if they exist
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.md$
+
+# ── Google ──
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+# ── Google Images ──
+User-agent: Googlebot-Image
+Allow: /
+
+# ── Google AdSense ──
+User-agent: Mediapartners-Google
+Allow: /
+
+# ── Bing ──
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+# ── DuckDuckGo ──
+User-agent: DuckDuckBot
+Allow: /
+
+# ── Yahoo ──
+User-agent: Slurp
+Allow: /
+Crawl-delay: 5
+
+# ── Block bad/scraper bots ──
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ── Sitemap location ──
+Sitemap:https://creativestack-web.github.io/toolkit-pro/#/sitemap.xml

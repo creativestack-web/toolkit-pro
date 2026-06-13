@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us — ToolKit Pro | Free Online Utility Hub</title>
+  <meta name="description" content="Learn about ToolKit Pro — a free online tools platform built for students, developers and professionals. Discover our mission, values, and the tools we offer."/>
+  <meta name="author" content="ToolKit Pro"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://creativestack-web.github.io/toolkit-pro/#about.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="ToolKit Pro"/>
+  <meta property="og:title" content="About ToolKit Pro — Free Online Utility Hub"/>
+  <meta property="og:description" content="Learn about ToolKit Pro, our mission to provide free, professional-grade online tools with no sign-up required. 15+ tools for students, developers and professionals."/>
+  <meta property="og:image" content="https://creativestack-web.github.io/toolkit-pro/#og-image.png"/>
+  <meta property="og:url" content="https://creativestack-web.github.io/toolkit-pro/#about.html"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="About ToolKit Pro — Free Online Utility Hub"/>
+  <meta name="twitter:description" content="Learn about ToolKit Pro — 15+ free online tools for students, developers and professionals. No sign-up, no fees, 100% browser-based."/>
+  <meta name="twitter:image" content="https://creativestack-web.github.io/toolkit-pro/#og-image.png"/>
+
+  <meta name="theme-color" content="#0F172A"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230F172A'/><rect x='5' y='7' width='10' height='3' rx='1' fill='white'/><rect x='8.5' y='9.5' width='3' height='11' rx='1' fill='white'/><rect x='17' y='7' width='3' height='14' rx='1' fill='white'/><rect x='17' y='7' width='9' height='3' rx='1' fill='white'/><rect x='23' y='7' width='3' height='7.5' rx='1.5' fill='white'/><rect x='17' y='11.5' width='9' height='3' rx='1' fill='white'/></svg>"/>
+
+  <!-- Structured Data: AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About ToolKit Pro",
+    "url": "https://creativestack-web.github.io/toolkit-pro/#about.html",
+    "description": "Learn about ToolKit Pro — a free online tools platform built for students, developers and professionals.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://creativestack-web.github.io/toolkit-pro/#"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://creativestack-web.github.io/toolkit-pro/#about.html"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ToolKit Pro",
+    "url": "https://creativestack-web.github.io/toolkit-pro/#",
+    "logo": "https://creativestack-web.github.io/toolkit-pro/#og-image.png",
+    "description": "ToolKit Pro is a free online tools platform offering 15+ calculators, converters and productivity tools for students, developers and professionals.",
+    "foundingDate": "2025",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "url": "https://creativestack-web.github.io/toolkit-pro/#contact.html"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=DM+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="pages.css"/>
+
+  <style>
+    /* ── Skip Link ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: #F59E0B;
+      color: #0F172A;
+      padding: 0.5rem 1rem;
+      border-radius: 0 0 6px 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      z-index: 9999;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── About Page Extra Styles ── */
+    .about-intro-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+      margin-top: 24px;
+    }
+    @media (max-width: 700px) {
+      .about-intro-block { grid-template-columns: 1fr; }
+    }
+    .about-intro-visual {
+      background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(124,58,237,0.08));
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .about-intro-visual-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+    }
+    .about-intro-visual-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .about-intro-visual-text strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .about-intro-visual-text span {
+      font-size: 0.78rem;
+      opacity: 0.65;
+    }
+
+    /* ── Timeline ── */
+    .about-timeline {
+      margin-top: 28px;
+      position: relative;
+      padding-left: 28px;
+    }
+    .about-timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, #F59E0B, rgba(245,158,11,0.1));
+      border-radius: 2px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 28px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #F59E0B;
+      border: 2px solid var(--bg, #0F172A);
+      box-shadow: 0 0 0 3px rgba(245,158,11,0.2);
+    }
+    .timeline-year {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #F59E0B;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+    .timeline-text {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+    .timeline-text strong {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      opacity: 1;
+      margin-bottom: 2px;
+    }
+
+    /* ── Promise Cards ── */
+    .about-promise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .about-promise-card {
+      padding: 22px 20px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.07);
+      background: rgba(255,255,255,0.025);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .about-promise-card:hover {
+      border-color: rgba(245,158,11,0.25);
+      transform: translateY(-2px);
+    }
+    .about-promise-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .about-promise-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .about-promise-text {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      opacity: 0.72;
+    }
+
+    /* ── Tech Stack ── */
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .tech-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.09);
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .tech-pill:hover {
+      background: rgba(245,158,11,0.1);
+      border-color: rgba(245,158,11,0.3);
+    }
+
+    /* ── Contact Nudge ── */
+    .about-contact-nudge {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 24px 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(245,158,11,0.2);
+      background: rgba(245,158,11,0.05);
+      margin-top: 20px;
+    }
+    .about-contact-nudge p {
+      font-size: 0.92rem;
+      opacity: 0.85;
+      margin: 0;
+    }
+    .about-contact-nudge strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 4px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation" role="navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="ToolKit Pro — Go to homepage">
+        <div class="logo-mark">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <rect width="22" height="22" rx="5" fill="#F59E0B"/>
+            <rect x="3" y="4.5" width="7" height="2.2" rx="0.8" fill="#0F172A"/>
+            <rect x="5.4" y="6.5" width="2.2" height="7.5" rx="0.8" fill="#0F172A"/>
+            <rect x="12" y="4.5" width="2.2" height="10" rx="0.8" fill="#0F172A"/>
+            <rect x="12" y="4.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+            <rect x="16.3" y="4.5" width="2.2" height="5.2" rx="1.1" fill="#0F172A"/>
+            <rect x="12" y="8.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+          </svg>
+        </div>
+        <span class="logo-text">ToolKit<em>Pro</em></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#tools-section" class="nav-link">Tools</a></li>
+        <li><a href="about.html" class="nav-link" aria-current="page" style="color:var(--accent)">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <a href="index.html" class="nav-cta" aria-label="Launch ToolKit Pro tools">Launch Tools →</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation menu">
+    <a href="index.html">🏠 Home</a>
+    <a href="index.html#tools-section">🛠️ All Tools</a>
+    <a href="about.html" style="color:var(--accent)" aria-current="page">ℹ️ About</a>
+    <a href="contact.html">✉️ Contact</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <div class="drawer-divider"></div>
+    <a href="index.html" class="drawer-cta">Launch Tools →</a>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay" onclick="document.getElementById('mobile-drawer').classList.remove('open');document.getElementById('drawer-overlay').classList.remove('open');"></div>
+
+  <main role="main" id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="About page hero">
+      <div class="page-hero-bg" aria-hidden="true">
+        <div class="page-hero-grid"></div>
+        <div class="page-hero-orb page-hero-orb-1"></div>
+        <div class="page-hero-orb page-hero-orb-2"></div>
+      </div>
+      <div class="page-hero-content">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <ol style="list-style:none;display:flex;align-items:center;gap:6px;padding:0;margin:0;">
+            <li><a href="index.html">Home</a></li>
+            <li aria-hidden="true"><span class="page-breadcrumb-sep">›</span></li>
+            <li><span aria-current="page">About</span></li>
+          </ol>
+        </nav>
+        <div class="page-hero-eyebrow">About Us</div>
+        <h1 class="page-hero-title">Built for Everyone.<br/><span style="color:#F59E0B;">Free for Everyone.</span></h1>
+        <p class="page-hero-sub">ToolKit Pro is an open, no-nonsense utility hub built by developers who were tired of ad-cluttered, paywalled online tools. We built the tools we wanted to use — and made them free for everyone.</p>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="page-content" id="content-start">
+
+      <!-- ── Mission ── -->
+      <section class="page-section" aria-labelledby="mission-heading">
+        <div class="ps-label">Our Mission</div>
+        <h2 class="ps-title" id="mission-heading">Powerful tools, zero barriers.</h2>
+        <div class="about-intro-block">
+          <div>
+            <p class="ps-text">ToolKit Pro is a free online tools platform offering useful calculators, converters and productivity tools for students, developers and professionals. We believe everyone deserves access to high-quality utility tools without sign-up walls, subscription fees or intrusive advertising.</p>
+            <p class="ps-text" style="margin-top:14px;">Everything on ToolKit Pro runs entirely in your browser. Your data never leaves your device — we don't collect it, store it or sell it. That's a promise baked into our architecture, not just our policy.</p>
+            <p class="ps-text" style="margin-top:14px;">We started with a simple question: <em>why do so many useful online tools come with so much friction?</em> Sign up here, pay there, solve a CAPTCHA, wait for an email. ToolKit Pro is our answer — open the page and get to work.</p>
+          </div>
+          <div class="about-intro-visual" aria-label="Key platform facts">
+            <div class="about-intro-visual-item">
+              <span class="about-intro-visual-icon" aria-hidden="true">🌐</span>
+              <div class="about-intro-visual-text">
+                <strong>100% Browser-Based</strong>
+                <span>Every tool runs locally — no server, no waiting</span>
+              </div>
+            </div>
+            <div class="about-intro-visual-item">
+              <span class="about-intro-visual-icon" aria-hidden="true">🔒</span>
+              <div class="about-intro-visual-text">
+                <strong>Zero Data Collection</strong>
+                <span>Your inputs never leave your device</span>
+              </div>
+            </div>
+            <div class="about-intro-visual-item">
+              <span class="about-intro-visual-icon" aria-hidden="true">🆓</span>
+              <div class="about-intro-visual-text">
+                <strong>Always Free</strong>
+                <span>No premium tier, no sign-up, no hidden fees</span>
+              </div>
+            </div>
+            <div class="about-intro-visual-item">
+              <span class="about-intro-visual-icon" aria-hidden="true">📱</span>
+              <div class="about-intro-visual-text">
+                <strong>Works on Any Device</strong>
+                <span>Mobile, tablet, laptop or desktop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Stats ── -->
+      <section class="page-section" aria-labelledby="stats-heading">
+        <div class="ps-label">By the Numbers</div>
+        <h2 class="ps-title" id="stats-heading">ToolKit Pro at a glance.</h2>
+        <div class="about-grid">
+          <div class="about-stat-card">
+            <div class="about-stat-icon" aria-hidden="true">🛠️</div>
+            <div class="about-stat-num">15+</div>
+            <div class="about-stat-label">Free Online Tools</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-icon" aria-hidden="true">⚡</div>
+            <div class="about-stat-num">0ms</div>
+            <div class="about-stat-label">Server Latency (100% local)</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-icon" aria-hidden="true">🔒</div>
+            <div class="about-stat-num">0</div>
+            <div class="about-stat-label">Data Points Collected</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-icon" aria-hidden="true">🆓</div>
+            <div class="about-stat-num">100%</div>
+            <div class="about-stat-label">Free, Forever</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Our Story / Timeline ── -->
+      <section class="page-section" aria-labelledby="story-heading">
+        <div class="ps-label">Our Story</div>
+        <h2 class="ps-title" id="story-heading">How ToolKit Pro came to be.</h2>
+        <p class="ps-text">Like many developer projects, ToolKit Pro started as a personal need. We kept opening browser tabs for unit converters, calculator apps and QR generators — each cluttered with ads, pop-ups and sign-up prompts. So we built our own, and kept adding tools until it became something worth sharing.</p>
+        <div class="about-timeline" aria-label="ToolKit Pro timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">The Beginning</div>
+            <div class="timeline-text">
+              <strong>The idea is born</strong>
+              Started as a personal collection of browser bookmarks and small utility scripts. Frustrated by existing tools cluttered with ads and paywalls.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">Early Development</div>
+            <div class="timeline-text">
+              <strong>First tools go live</strong>
+              Unit Converter, Currency Converter and Scientific Calculator launch as the core trio. The goal: instant results, no friction.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">Expansion</div>
+            <div class="timeline-text">
+              <strong>Growing the toolkit</strong>
+              QR Code Generator, EMI Calculator, BMI Calculator, Password Generator and more added based on user requests. Total tools cross 10.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">Today — 2025</div>
+            <div class="timeline-text">
+              <strong>15+ tools and counting</strong>
+              ToolKit Pro now offers 15+ free tools with a fully responsive design, dark/light mode, and complete accessibility support. Still free. Still growing.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Values ── -->
+      <section class="page-section" aria-labelledby="values-heading">
+        <div class="ps-label">Our Values</div>
+        <h2 class="ps-title" id="values-heading">What we stand for.</h2>
+        <p class="ps-text">These aren't just words on a page — they're decisions baked into every tool we build and every line of code we write.</p>
+        <div class="about-values-grid">
+          <div class="about-value-card">
+            <div class="about-value-icon" aria-hidden="true">🔓</div>
+            <div class="about-value-title">Always Free</div>
+            <p class="about-value-text">Every tool is free. No freemium limits, no premium tiers, no credit cards required. We're committed to keeping ToolKit Pro free for everyone, always.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon" aria-hidden="true">🛡️</div>
+            <div class="about-value-title">Privacy First</div>
+            <p class="about-value-text">All calculations run locally in your browser. We use no tracking pixels, no analytics cookies and no third-party data sharing. Your data is yours.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon" aria-hidden="true">📱</div>
+            <div class="about-value-title">Works Everywhere</div>
+            <p class="about-value-text">Fully responsive — works on mobile, tablet and desktop without installing anything. Open a browser, start working. No app download needed.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon" aria-hidden="true">⚡</div>
+            <div class="about-value-title">Instant Results</div>
+            <p class="about-value-text">Every tool updates as you type. No Submit buttons, no page reloads — just immediate, accurate output. Speed is a feature, not an afterthought.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon" aria-hidden="true">🧹</div>
+            <div class="about-value-title">Clean Design</div>
+            <p class="about-value-text">No popups, no banners, no newsletter upsells. A clean interface that lets you focus on the task at hand. Simplicity is our design philosophy.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon" aria-hidden="true">♿</div>
+            <div class="about-value-title">Accessible</div>
+            <p class="about-value-text">Semantic HTML, full keyboard navigation, proper ARIA labels and sufficient colour contrast — built to work for every user, regardless of ability.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── What We Offer ── -->
+      <section class="page-section" aria-labelledby="offer-heading">
+        <div class="ps-label">What We Offer</div>
+        <h2 class="ps-title" id="offer-heading">15+ tools across 6 categories.</h2>
+        <p class="ps-text">From everyday unit conversions to advanced scientific calculations, ToolKit Pro covers the tools you actually use. Every tool is hand-crafted, tested for accuracy and designed to be genuinely useful rather than just feature-rich.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:20px">
+          <a href="index.html" class="glass-card" style="display:flex;align-items:center;gap:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+            <span style="font-size:1.4rem" aria-hidden="true">📏</span>
+            <div>
+              <strong style="display:block;font-size:.9rem">Converters</strong>
+              <span style="font-size:.8rem;color:var(--text2)">Length, weight, temperature, speed, area, data storage</span>
+            </div>
+          </a>
+          <a href="index.html" class="glass-card" style="display:flex;align-items:center;gap:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+            <span style="font-size:1.4rem" aria-hidden="true">💱</span>
+            <div>
+              <strong style="display:block;font-size:.9rem">Finance Tools</strong>
+              <span style="font-size:.8rem;color:var(--text2)">Currency converter, EMI &amp; loan calculator with schedule</span>
+            </div>
+          </a>
+          <a href="index.html" class="glass-card" style="display:flex;align-items:center;gap:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+            <span style="font-size:1.4rem" aria-hidden="true">🧮</span>
+            <div>
+              <strong style="display:block;font-size:.9rem">Calculators</strong>
+              <span style="font-size:.8rem;color:var(--text2)">Scientific, BMI, age, GPA, percentage, discount calculator</span>
+            </div>
+          </a>
+          <a href="index.html" class="glass-card" style="display:flex;align-items:center;gap:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+            <span style="font-size:1.4rem" aria-hidden="true">📝</span>
+            <div>
+              <strong style="display:block;font-size:.9rem">Text Tools</strong>
+              <span style="font-size:.8rem;color:var(--text2)">Word counter, character count, text case converter</span>
+            </div>
+          </a>
+          <a href="index.html" class="glass-card" style="display:flex;align-items:center;gap:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+            <span style="font-size:1.4rem" aria-hidden="true">🔐</span>
+            <div>
+              <strong style="display:block;font-size:.9rem">Generators</strong>
+              <span style="font-size:.8rem;color:var(--text2)">Password generator, QR code generator, random number</span>
+            </div>
+          </a>
+          <a href="index.html" class="glass-card" style="display:flex;align-items:center;gap:12px;padding:16px 18px;text-decoration:none;color:inherit;transition:border-color 0.2s,transform 0.2s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+            <span style="font-size:1.4rem" aria-hidden="true">⏱️</span>
+            <div>
+              <strong style="display:block;font-size:.9rem">Time Tools</strong>
+              <span style="font-size:.8rem;color:var(--text2)">Stopwatch with laps, countdown timer, age calculator</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ── Our Promise ── -->
+      <section class="page-section" aria-labelledby="promise-heading">
+        <div class="ps-label">Our Promise</div>
+        <h2 class="ps-title" id="promise-heading">What you can always count on.</h2>
+        <p class="ps-text">We make specific, measurable commitments — not vague marketing statements. Here's exactly what ToolKit Pro will always deliver.</p>
+        <div class="about-promise-grid">
+          <div class="about-promise-card">
+            <div class="about-promise-icon" aria-hidden="true">✅</div>
+            <div>
+              <div class="about-promise-title">No Hidden Costs. Ever.</div>
+              <p class="about-promise-text">Every tool on ToolKit Pro is and will remain completely free. We will never introduce a paywall, paid tier or subscription for any existing tool.</p>
+            </div>
+          </div>
+          <div class="about-promise-card">
+            <div class="about-promise-icon" aria-hidden="true">✅</div>
+            <div>
+              <div class="about-promise-title">No Account Required</div>
+              <p class="about-promise-text">You will never need to create an account, verify an email or provide personal information to use any tool on this platform.</p>
+            </div>
+          </div>
+          <div class="about-promise-card">
+            <div class="about-promise-icon" aria-hidden="true">✅</div>
+            <div>
+              <div class="about-promise-title">Your Data Stays With You</div>
+              <p class="about-promise-text">All processing happens in your browser. Loan amounts, passwords, health data — none of it is transmitted to our servers because we don't have any servers processing your data.</p>
+            </div>
+          </div>
+          <div class="about-promise-card">
+            <div class="about-promise-icon" aria-hidden="true">✅</div>
+            <div>
+              <div class="about-promise-title">Accuracy You Can Trust</div>
+              <p class="about-promise-text">Every calculator and converter is built using verified formulas and tested against multiple reference sources to ensure correct, reliable results.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Technology ── -->
+      <section class="page-section" aria-labelledby="tech-heading">
+        <div class="ps-label">Technology</div>
+        <h2 class="ps-title" id="tech-heading">How ToolKit Pro is built.</h2>
+        <p class="ps-text">ToolKit Pro is built with pure, standards-compliant web technologies — no heavy frameworks, no unnecessary dependencies. This keeps the site fast, lightweight and compatible with every modern browser.</p>
+        <p class="ps-text" style="margin-top:12px;">The philosophy is simple: the best tool for the user is the one that loads fastest, works on the most devices, and respects their privacy. Plain HTML, CSS and JavaScript achieves all three better than any framework could.</p>
+        <div class="tech-stack" aria-label="Technologies used">
+          <span class="tech-pill">🌐 HTML5</span>
+          <span class="tech-pill">🎨 CSS3 &amp; Custom Properties</span>
+          <span class="tech-pill">⚡ Vanilla JavaScript</span>
+          <span class="tech-pill">📱 Responsive Design</span>
+          <span class="tech-pill">♿ WCAG Accessibility</span>
+          <span class="tech-pill">🔍 SEO Optimized</span>
+          <span class="tech-pill">🔒 No Backend</span>
+          <span class="tech-pill">📊 Schema.org Markup</span>
+          <span class="tech-pill">🌓 Dark &amp; Light Mode</span>
+          <span class="tech-pill">🔤 Google Fonts</span>
+        </div>
+      </section>
+
+      <!-- ── Contact Nudge ── -->
+      <section class="page-section" aria-labelledby="contact-nudge-heading">
+        <div class="ps-label">Get In Touch</div>
+        <h2 class="ps-title" id="contact-nudge-heading">We'd love to hear from you.</h2>
+        <p class="ps-text">Have a tool suggestion? Found a bug? Want to give feedback or just say hello? ToolKit Pro is built for its users — your input directly shapes what we build next.</p>
+        <div class="about-contact-nudge">
+          <div>
+            <strong>Send us a message</strong>
+            <p>Whether it's a bug report, feature request or general feedback — we read every message and respond to most.</p>
+          </div>
+          <a href="contact.html" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;white-space:nowrap;" aria-label="Go to the contact page">
+            Contact Us
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ── CTA ── -->
+      <section class="page-section" aria-labelledby="cta-heading" style="text-align:center;padding:48px 24px;background:var(--surface);border:1px solid var(--border2);border-radius:24px;position:relative;overflow:hidden;">
+        <div style="position:absolute;width:300px;height:300px;top:-100px;left:-60px;border-radius:50%;filter:blur(60px);background:radial-gradient(circle,rgba(245,158,11,0.12),transparent 70%)" aria-hidden="true"></div>
+        <div style="position:absolute;width:200px;height:200px;bottom:-80px;right:-40px;border-radius:50%;filter:blur(50px);background:radial-gradient(circle,rgba(124,58,237,0.1),transparent 70%)" aria-hidden="true"></div>
+        <div style="position:relative;z-index:1">
+          <h2 id="cta-heading" style="font-family:'Syne',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-1px;margin-bottom:10px">Ready to use the tools?</h2>
+          <p style="color:var(--text2);margin-bottom:24px;font-size:.95rem;max-width:400px;margin-left:auto;margin-right:auto;">Everything is free, no account needed. 15+ tools waiting for you right now.</p>
+          <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+            <a href="index.html" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none" aria-label="Launch ToolKit Pro and start using tools">
+              Launch ToolKit Pro
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="contact.html" class="btn-ghost" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none" aria-label="Go to contact page">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <rect width="22" height="22" rx="5" fill="#F59E0B"/>
+              <rect x="3" y="4.5" width="7" height="2.2" rx="0.8" fill="#0F172A"/>
+              <rect x="5.4" y="6.5" width="2.2" height="7.5" rx="0.8" fill="#0F172A"/>
+              <rect x="12" y="4.5" width="2.2" height="10" rx="0.8" fill="#0F172A"/>
+              <rect x="12" y="4.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+              <rect x="16.3" y="4.5" width="2.2" height="5.2" rx="1.1" fill="#0F172A"/>
+              <rect x="12" y="8.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+            </svg>
+          </div>
+          <span class="logo-text">ToolKit<em>Pro</em></span>
+        </div>
+        <p>ToolKit Pro is a free online tools platform offering 15+ calculators, converters and productivity tools for students, developers and professionals. All tools run locally in your browser.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="GitHub" aria-label="ToolKit Pro on GitHub" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Twitter / X" aria-label="ToolKit Pro on Twitter" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="contact.html" class="social-btn" title="Contact Us" aria-label="Contact ToolKit Pro">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Pages</div>
+          <a href="index.html">Home</a>
+          <a href="index.html#tools-section">All Tools</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Popular Tools</div>
+          <a href="index.html">Unit Converter</a>
+          <a href="index.html">Currency Converter</a>
+          <a href="index.html">BMI Calculator</a>
+          <a href="index.html">Scientific Calculator</a>
+          <a href="index.html">QR Code Generator</a>
+          <a href="index.html">EMI Calculator</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">More Tools</div>
+          <a href="index.html">Password Generator</a>
+          <a href="index.html">Word Counter</a>
+          <a href="index.html">Age Calculator</a>
+          <a href="index.html">GPA Calculator</a>
+          <a href="index.html">Stopwatch &amp; Timer</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ToolKit Pro · Built with HTML, CSS &amp; JS · Free forever ⚡</p>
+      <p>All calculations run locally in your browser. No data is sent anywhere. <a href="privacy.html" style="color:inherit;opacity:0.7;">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">↑</button>
+
+  <script>
+    // ── Theme ──
+    const html = document.documentElement;
+    const saved = localStorage.getItem('tkp-theme') || 'dark';
+    html.setAttribute('data-theme', saved);
+    document.getElementById('theme-icon').textContent = saved === 'dark' ? '🌙' : '☀️';
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('tkp-theme', next);
+      document.getElementById('theme-icon').textContent = next === 'dark' ? '🌙' : '☀️';
+    });
+
+    // ── Navbar scroll ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+      document.getElementById('back-to-top').classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
+    // ── Back to top ──
+    document.getElementById('back-to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ── Hamburger ──
+    const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('open');
+      overlay.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    overlay.addEventListener('click', () => {
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+
+    // ── Animate stats on scroll ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.about-stat-card, .about-value-card, .about-promise-card, .timeline-item').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

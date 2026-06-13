@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — ToolKit Pro | Get In Touch</title>
+  <meta name="description" content="Get in touch with the ToolKit Pro team. Send us your feedback, bug reports, feature requests or tool suggestions. We read every message and reply within 48 hours."/>
+  <meta name="author" content="ToolKit Pro"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://creativestack-web.github.io/toolkit-pro/#contact.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="ToolKit Pro"/>
+  <meta property="og:title" content="Contact ToolKit Pro — Get in Touch"/>
+  <meta property="og:description" content="Send us your feedback, bug reports or feature requests. We read every message and usually reply within 48 hours."/>
+  <meta property="og:image" content="https://creativestack-web.github.io/toolkit-pro/#og-image.png"/>
+  <meta property="og:url" content="https://creativestack-web.github.io/toolkit-pro/#contact.html"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Contact ToolKit Pro — Get in Touch"/>
+  <meta name="twitter:description" content="Send feedback, bug reports or feature requests to ToolKit Pro. We read every message."/>
+  <meta name="twitter:image" content="https://creativestack-web.github.io/toolkit-pro/#og-image.png"/>
+
+  <meta name="theme-color" content="#0F172A"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230F172A'/><rect x='5' y='7' width='10' height='3' rx='1' fill='white'/><rect x='8.5' y='9.5' width='3' height='11' rx='1' fill='white'/><rect x='17' y='7' width='3' height='14' rx='1' fill='white'/><rect x='17' y='7' width='9' height='3' rx='1' fill='white'/><rect x='23' y='7' width='3' height='7.5' rx='1.5' fill='white'/><rect x='17' y='11.5' width='9' height='3' rx='1' fill='white'/></svg>"/>
+
+  <!-- Structured Data: ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact ToolKit Pro",
+    "url": "https://creativestack-web.github.io/toolkit-pro/#contact.html",
+    "description": "Get in touch with the ToolKit Pro team for bug reports, feature requests, tool suggestions or general feedback.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://creativestack-web.github.io/toolkit-pro/#"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://creativestack-web.github.io/toolkit-pro/#contact.html"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=DM+Mono:wght@400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="pages.css"/>
+
+  <style>
+    /* ── Skip Link ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: #F59E0B;
+      color: #0F172A;
+      padding: 0.5rem 1rem;
+      border-radius: 0 0 6px 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      z-index: 9999;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── Spin animation ── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Trust badges ── */
+    .contact-trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+      justify-content: center;
+    }
+    .contact-trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.8rem;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+
+    /* ── Response time badge ── */
+    .response-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 12px;
+      background: rgba(16,185,129,0.08);
+      border: 1px solid rgba(16,185,129,0.2);
+      font-size: 0.85rem;
+      color: #10b981;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .response-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      animation: pulse-dot 2s infinite;
+      flex-shrink: 0;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    /* ── What to expect section ── */
+    .contact-expect {
+      margin-top: 28px;
+      padding: 20px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .contact-expect-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.5;
+      margin-bottom: 14px;
+    }
+    .contact-expect-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+    .contact-expect-item:last-child { margin-bottom: 0; }
+    .contact-expect-item span:first-child { flex-shrink: 0; }
+
+    /* ── Alternative contact ── */
+    .alt-contact-card {
+      margin-top: 16px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .alt-contact-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.5;
+      margin-bottom: 14px;
+    }
+    .alt-contact-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.85rem;
+      transition: background 0.2s;
+      margin-bottom: 6px;
+    }
+    .alt-contact-link:hover {
+      background: rgba(255,255,255,0.05);
+    }
+    .alt-contact-link:last-child { margin-bottom: 0; }
+    .alt-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .alt-label { font-weight: 600; display: block; font-size: 0.85rem; }
+    .alt-value { font-size: 0.78rem; opacity: 0.6; }
+
+    /* ── Form character counter ── */
+    .char-counter {
+      font-size: 0.75rem;
+      opacity: 0.5;
+      text-align: right;
+      margin-top: 4px;
+    }
+    .char-counter.warn { color: #f59e0b; opacity: 1; }
+    .char-counter.good { color: #10b981; opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation" role="navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="ToolKit Pro — Go to homepage">
+        <div class="logo-mark">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <rect width="22" height="22" rx="5" fill="#F59E0B"/>
+            <rect x="3" y="4.5" width="7" height="2.2" rx="0.8" fill="#0F172A"/>
+            <rect x="5.4" y="6.5" width="2.2" height="7.5" rx="0.8" fill="#0F172A"/>
+            <rect x="12" y="4.5" width="2.2" height="10" rx="0.8" fill="#0F172A"/>
+            <rect x="12" y="4.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+            <rect x="16.3" y="4.5" width="2.2" height="5.2" rx="1.1" fill="#0F172A"/>
+            <rect x="12" y="8.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+          </svg>
+        </div>
+        <span class="logo-text">ToolKit<em>Pro</em></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#tools-section" class="nav-link">Tools</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page" style="color:var(--accent)">Contact</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <a href="index.html" class="nav-cta" aria-label="Launch ToolKit Pro tools">Launch Tools →</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation menu">
+    <a href="index.html">🏠 Home</a>
+    <a href="index.html#tools-section">🛠️ All Tools</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html" style="color:var(--accent)" aria-current="page">✉️ Contact</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <div class="drawer-divider"></div>
+    <a href="index.html" class="drawer-cta">Launch Tools →</a>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <main role="main" id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Contact page hero">
+      <div class="page-hero-bg" aria-hidden="true">
+        <div class="page-hero-grid"></div>
+        <div class="page-hero-orb page-hero-orb-1" style="background:radial-gradient(circle,rgba(16,185,129,0.12) 0%,transparent 70%)"></div>
+        <div class="page-hero-orb page-hero-orb-2"></div>
+      </div>
+      <div class="page-hero-content">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <ol style="list-style:none;display:flex;align-items:center;gap:6px;padding:0;margin:0;">
+            <li><a href="index.html">Home</a></li>
+            <li aria-hidden="true"><span class="page-breadcrumb-sep">›</span></li>
+            <li><span aria-current="page">Contact</span></li>
+          </ol>
+        </nav>
+        <div class="page-hero-eyebrow">Contact Us</div>
+        <h1 class="page-hero-title">We'd love to<br/><span style="color:#F59E0B;">hear from you.</span></h1>
+        <p class="page-hero-sub">Bug report, feature request, tool suggestion or just want to say hi — we read every message and usually reply within 48 hours.</p>
+        <div class="contact-trust-bar" aria-label="Contact assurances">
+          <span class="contact-trust-pill">⚡ Fast Response</span>
+          <span class="contact-trust-pill">🔒 Privacy Respected</span>
+          <span class="contact-trust-pill">✅ Every Message Read</span>
+          <span class="contact-trust-pill">🆓 No Spam, Ever</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="page-content">
+      <div class="contact-layout">
+
+        <!-- ── FORM COLUMN ── -->
+        <div class="contact-form-wrap" aria-label="Contact form section">
+
+          <div class="response-badge" aria-label="Response time indicator">
+            <span class="response-dot" aria-hidden="true"></span>
+            Usually responding within 48 hours
+          </div>
+
+          <h2 class="contact-form-title">Send us a message</h2>
+          <p style="font-size:0.9rem;opacity:0.7;margin-bottom:24px;line-height:1.6;">
+            Fill in the form below and we'll get back to you as soon as possible. All fields marked with * are required.
+          </p>
+
+          <!-- Contact Form (Formspree-ready) -->
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            novalidate
+            aria-label="Contact form"
+          >
+            <!-- Honeypot spam prevention -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true"/>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label class="form-label" for="cf-name">
+                  Full Name <span aria-hidden="true" style="color:#ef4444">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="cf-name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="name-error"
+                />
+                <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="cf-email">
+                  Email Address <span aria-hidden="true" style="color:#ef4444">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="cf-email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="email-error"
+                />
+                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="cf-subject">
+                Subject <span aria-hidden="true" style="color:#ef4444">*</span>
+              </label>
+              <div class="form-select-wrap">
+                <select
+                  class="form-select"
+                  id="cf-subject"
+                  name="subject"
+                  required
+                  aria-required="true"
+                  aria-describedby="subject-error"
+                >
+                  <option value="" disabled selected>Choose a topic…</option>
+                  <option value="bug">🐛 Bug Report</option>
+                  <option value="feature">💡 Feature Request</option>
+                  <option value="tool">🛠️ Tool Suggestion</option>
+                  <option value="feedback">⭐ General Feedback</option>
+                  <option value="accuracy">📐 Accuracy Issue</option>
+                  <option value="other">💬 Other</option>
+                </select>
+              </div>
+              <span class="form-error" id="subject-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="cf-tool">Related Tool <span style="opacity:0.5;font-weight:400">(optional)</span></label>
+              <div class="form-select-wrap">
+                <select class="form-select" id="cf-tool" name="tool" aria-label="Select related tool if applicable">
+                  <option value="" selected>None / General</option>
+                  <option>Unit Converter</option>
+                  <option>Currency Converter</option>
+                  <option>Scientific Calculator</option>
+                  <option>QR Code Generator</option>
+                  <option>BMI Calculator</option>
+                  <option>EMI Calculator</option>
+                  <option>Age Calculator</option>
+                  <option>GPA Calculator</option>
+                  <option>Password Generator</option>
+                  <option>Word Counter</option>
+                  <option>Text Case Converter</option>
+                  <option>Percentage Calculator</option>
+                  <option>Discount Calculator</option>
+                  <option>Random Number Generator</option>
+                  <option>Stopwatch &amp; Timer</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="cf-message">
+                Message <span aria-hidden="true" style="color:#ef4444">*</span>
+              </label>
+              <textarea
+                class="form-input form-textarea"
+                id="cf-message"
+                name="message"
+                placeholder="Tell us what's on your mind — the more detail, the better we can help…"
+                required
+                minlength="20"
+                aria-required="true"
+                aria-describedby="message-error message-counter"
+                oninput="updateCounter(this)"
+              ></textarea>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
+                <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+                <span class="char-counter" id="message-counter" aria-live="polite">0 / 20 min</span>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:flex-start;gap:10px;margin-top:16px;padding:14px 16px;background:var(--surface2);border:1px solid var(--border);border-radius:10px">
+              <input
+                type="checkbox"
+                id="cf-consent"
+                name="consent"
+                required
+                aria-required="true"
+                style="width:16px;height:16px;accent-color:var(--accent);flex-shrink:0;margin-top:2px;"
+              />
+              <label for="cf-consent" style="font-size:.82rem;color:var(--text2);cursor:pointer;line-height:1.5;">
+                I agree that my information may be used to respond to this inquiry. We will never share it with third parties or use it for marketing. See our <a href="privacy.html" style="color:var(--accent);text-decoration:underline;">Privacy Policy</a>.
+              </label>
+            </div>
+            <span class="form-error" id="consent-error" role="alert" aria-live="polite" style="display:block;margin-top:4px;"></span>
+
+            <button type="submit" class="form-submit" id="form-submit" aria-label="Submit contact form">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Send Message
+            </button>
+
+            <!-- Mailto fallback note -->
+            <p style="font-size:0.78rem;opacity:0.5;text-align:center;margin-top:12px;line-height:1.5;">
+              Prefer email? Reach us directly at
+              <a href="mailto:contact@toolkitpro.app" style="color:var(--accent);text-decoration:none;">contact@toolkitpro.app</a>
+            </p>
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success" id="form-success" style="display:none;" aria-live="polite" role="status">
+            <div class="form-success-icon">🎉</div>
+            <h3>Message sent successfully!</h3>
+            <p>Thanks for reaching out to ToolKit Pro. We've received your message and will get back to you within 48 hours at the email address you provided.</p>
+            <p style="font-size:0.85rem;opacity:0.6;margin-top:8px;">In the meantime, feel free to explore our tools.</p>
+            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px;">
+              <button
+                onclick="resetForm()"
+                style="padding:10px 24px;border-radius:999px;border:1px solid var(--border2);background:var(--surface2);color:var(--text2);font-weight:600;cursor:pointer;font-size:.875rem;"
+                aria-label="Send another message"
+              >
+                Send another message
+              </button>
+              <a
+                href="index.html"
+                style="padding:10px 24px;border-radius:999px;border:none;background:var(--accent);color:#0F172A;font-weight:700;cursor:pointer;font-size:.875rem;text-decoration:none;display:inline-flex;align-items:center;"
+                aria-label="Explore ToolKit Pro tools"
+              >
+                Explore Tools →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SIDEBAR ── -->
+        <aside class="contact-sidebar" aria-label="Contact information and FAQ">
+
+          <!-- Response time & info -->
+          <div class="contact-info-card">
+            <div class="contact-info-title">Contact Information</div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="ci-label">Email</div>
+                <div class="ci-value">
+                  <a href="mailto:contact@toolkitpro.app" style="color:inherit;text-decoration:none;">contact@toolkitpro.app</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon" aria-hidden="true">⏱️</div>
+              <div>
+                <div class="ci-label">Response Time</div>
+                <div class="ci-value">Usually within 48 hours</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon" aria-hidden="true">🌍</div>
+              <div>
+                <div class="ci-label">Languages</div>
+                <div class="ci-value">English (primary)</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="ci-icon" aria-hidden="true">🛠️</div>
+              <div>
+                <div class="ci-label">Support Type</div>
+                <div class="ci-value">Bug reports, feedback &amp; suggestions</div>
+              </div>
+            </div>
+
+            <!-- What to expect -->
+            <div class="contact-expect">
+              <div class="contact-expect-title">What to expect</div>
+              <div class="contact-expect-item">
+                <span aria-hidden="true">✅</span>
+                <span>We read and consider every message — no auto-replies.</span>
+              </div>
+              <div class="contact-expect-item">
+                <span aria-hidden="true">✅</span>
+                <span>Bug reports are investigated and fixed in priority order.</span>
+              </div>
+              <div class="contact-expect-item">
+                <span aria-hidden="true">✅</span>
+                <span>Feature requests are logged and reviewed monthly.</span>
+              </div>
+              <div class="contact-expect-item">
+                <span aria-hidden="true">✅</span>
+                <span>Your email is only used to reply — never for marketing.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alternative contact -->
+          <div class="alt-contact-card">
+            <div class="alt-contact-title">Other ways to reach us</div>
+            <a href="about.html" class="alt-contact-link" aria-label="Learn more about ToolKit Pro">
+              <div class="alt-icon" aria-hidden="true">ℹ️</div>
+              <div>
+                <span class="alt-label">About ToolKit Pro</span>
+                <span class="alt-value">Learn about our mission and values</span>
+              </div>
+            </a>
+            <a href="privacy.html" class="alt-contact-link" aria-label="Read our Privacy Policy">
+              <div class="alt-icon" aria-hidden="true">🔒</div>
+              <div>
+                <span class="alt-label">Privacy Policy</span>
+                <span class="alt-value">How we handle your data</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- FAQ -->
+          <div class="contact-info-card">
+            <div class="contact-info-title">Frequently Asked Questions</div>
+
+            <div class="faq-item" id="faq-1">
+              <button class="faq-q" onclick="toggleFAQ('faq-1')" aria-expanded="false" aria-controls="faq-1-answer">
+                Is ToolKit Pro really free?
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+              </button>
+              <div class="faq-a" id="faq-1-answer" role="region" aria-labelledby="faq-1">
+                <div class="faq-a-inner">Yes — completely free, forever. No sign-up, no credit card, no freemium limits. All 15+ tools are available to everyone at no cost.</div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-2">
+              <button class="faq-q" onclick="toggleFAQ('faq-2')" aria-expanded="false" aria-controls="faq-2-answer">
+                Do you store my data?
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+              </button>
+              <div class="faq-a" id="faq-2-answer" role="region" aria-labelledby="faq-2">
+                <div class="faq-a-inner">No. Every calculation runs entirely in your browser. Nothing you type into any tool ever leaves your device. We don't use tracking cookies or analytics that identify individual users.</div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-3">
+              <button class="faq-q" onclick="toggleFAQ('faq-3')" aria-expanded="false" aria-controls="faq-3-answer">
+                Can I request a new tool?
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+              </button>
+              <div class="faq-a" id="faq-3-answer" role="region" aria-labelledby="faq-3">
+                <div class="faq-a-inner">Absolutely! Use the contact form and choose "Tool Suggestion" as the subject. We review every request and prioritise those most requested by the community.</div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-4">
+              <button class="faq-q" onclick="toggleFAQ('faq-4')" aria-expanded="false" aria-controls="faq-4-answer">
+                I found a bug — what should I do?
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+              </button>
+              <div class="faq-a" id="faq-4-answer" role="region" aria-labelledby="faq-4">
+                <div class="faq-a-inner">Use the form above and select "Bug Report". Include the tool name, what you expected to happen, and what actually happened. Screenshots are very helpful.</div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-5">
+              <button class="faq-q" onclick="toggleFAQ('faq-5')" aria-expanded="false" aria-controls="faq-5-answer">
+                Are the currency rates live?
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+              </button>
+              <div class="faq-a" id="faq-5-answer" role="region" aria-labelledby="faq-5">
+                <div class="faq-a-inner">No — the currency converter uses approximate reference rates that are periodically updated. For live trading rates always use a dedicated financial service or your bank.</div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-6">
+              <button class="faq-q" onclick="toggleFAQ('faq-6')" aria-expanded="false" aria-controls="faq-6-answer">
+                How do I switch between dark and light mode?
+                <span class="faq-chevron" aria-hidden="true">▾</span>
+              </button>
+              <div class="faq-a" id="faq-6-answer" role="region" aria-labelledby="faq-6">
+                <div class="faq-a-inner">Click the moon/sun icon in the top navigation bar. Your preference is saved automatically so the site remembers it on your next visit.</div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-mark">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <rect width="22" height="22" rx="5" fill="#F59E0B"/>
+              <rect x="3" y="4.5" width="7" height="2.2" rx="0.8" fill="#0F172A"/>
+              <rect x="5.4" y="6.5" width="2.2" height="7.5" rx="0.8" fill="#0F172A"/>
+              <rect x="12" y="4.5" width="2.2" height="10" rx="0.8" fill="#0F172A"/>
+              <rect x="12" y="4.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+              <rect x="16.3" y="4.5" width="2.2" height="5.2" rx="1.1" fill="#0F172A"/>
+              <rect x="12" y="8.5" width="6.5" height="2.2" rx="0.8" fill="#0F172A"/>
+            </svg>
+          </div>
+          <span class="logo-text">ToolKit<em>Pro</em></span>
+        </div>
+        <p>ToolKit Pro is a free online tools platform offering 15+ calculators, converters and productivity tools for students, developers and professionals. All tools run locally in your browser.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="GitHub" aria-label="ToolKit Pro on GitHub" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Twitter / X" aria-label="ToolKit Pro on Twitter" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="contact.html" class="social-btn" title="Contact Us" aria-label="Contact ToolKit Pro" aria-current="page">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Pages</div>
+          <a href="index.html">Home</a>
+          <a href="index.html#tools-section">All Tools</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Popular Tools</div>
+          <a href="index.html">Unit Converter</a>
+          <a href="index.html">Currency Converter</a>
+          <a href="index.html">BMI Calculator</a>
+          <a href="index.html">Scientific Calculator</a>
+          <a href="index.html">QR Code Generator</a>
+          <a href="index.html">EMI Calculator</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">More Tools</div>
+          <a href="index.html">Password Generator</a>
+          <a href="index.html">Word Counter</a>
+          <a href="index.html">Age Calculator</a>
+          <a href="index.html">GPA Calculator</a>
+          <a href="index.html">Stopwatch &amp; Timer</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ToolKit Pro · Built with HTML, CSS &amp; JS · Free forever ⚡</p>
+      <p>All calculations run locally in your browser. No data is sent anywhere. <a href="privacy.html" style="color:inherit;opacity:0.7;">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">↑</button>
+
+  <script>
+    // ── Theme ──
+    const html = document.documentElement;
+    const saved = localStorage.getItem('tkp-theme') || 'dark';
+    html.setAttribute('data-theme', saved);
+    document.getElementById('theme-icon').textContent = saved === 'dark' ? '🌙' : '☀️';
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('tkp-theme', next);
+      document.getElementById('theme-icon').textContent = next === 'dark' ? '🌙' : '☀️';
+    });
+
+    // ── Scroll effects ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+      document.getElementById('back-to-top').classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
+    // ── Back to top ──
+    document.getElementById('back-to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ── Hamburger ──
+    const hamburger = document.getElementById('hamburger');
+    const drawer    = document.getElementById('mobile-drawer');
+    const overlay   = document.getElementById('drawer-overlay');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = drawer.classList.toggle('open');
+      overlay.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    overlay.addEventListener('click', () => {
+      drawer.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+
+    // ── FAQ Accordion ──
+    function toggleFAQ(id) {
+      const item = document.getElementById(id);
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.faq-q').setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // ── Character Counter ──
+    function updateCounter(el) {
+      const count   = el.value.length;
+      const counter = document.getElementById('message-counter');
+      counter.textContent = count + ' / 20 min';
+      counter.className   = 'char-counter' + (count === 0 ? '' : count < 20 ? ' warn' : ' good');
+    }
+
+    // ── Form validation helpers ──
+    function setError(fieldId, errorId, message) {
+      const field = document.getElementById(fieldId);
+      const error = document.getElementById(errorId);
+      if (field) field.style.borderColor = message ? '#ef4444' : '';
+      if (error) {
+        error.textContent = message;
+        error.style.display = message ? 'block' : 'none';
+        error.style.color   = '#ef4444';
+        error.style.fontSize = '0.78rem';
+        error.style.marginTop = '4px';
+      }
+    }
+
+    function clearErrors() {
+      ['cf-name','cf-email','cf-subject','cf-message'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.borderColor = '';
+      });
+      ['name-error','email-error','subject-error','message-error','consent-error'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) { el.textContent = ''; el.style.display = 'none'; }
+      });
+      const consent = document.getElementById('cf-consent');
+      if (consent) consent.style.outline = '';
+    }
+
+    // ── Live border clearing ──
+    document.querySelectorAll('.form-input, .form-select').forEach(el => {
+      el.addEventListener('input',  () => { el.style.borderColor = ''; });
+      el.addEventListener('change', () => { el.style.borderColor = ''; });
+    });
+
+    // ── Contact Form Submit ──
+    const form      = document.getElementById('contact-form');
+    const success   = document.getElementById('form-success');
+    const submitBtn = document.getElementById('form-submit');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      clearErrors();
+
+      const name    = document.getElementById('cf-name').value.trim();
+      const email   = document.getElementById('cf-email').value.trim();
+      const subject = document.getElementById('cf-subject').value;
+      const message = document.getElementById('cf-message').value.trim();
+      const consent = document.getElementById('cf-consent').checked;
+
+      let hasError = false;
+
+      if (!name) {
+        setError('cf-name', 'name-error', 'Please enter your full name.');
+        hasError = true;
+      }
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setError('cf-email', 'email-error', 'Please enter a valid email address.');
+        hasError = true;
+      }
+      if (!subject) {
+        setError('cf-subject', 'subject-error', 'Please select a subject.');
+        hasError = true;
+      }
+      if (message.length < 20) {
+        setError('cf-message', 'message-error', 'Message must be at least 20 characters.');
+        hasError = true;
+      }
+      if (!consent) {
+        const consentEl = document.getElementById('cf-consent');
+        consentEl.style.outline = '2px solid #ef4444';
+        const consentErr = document.getElementById('consent-error');
+        consentErr.textContent = 'Please accept the privacy agreement to proceed.';
+        consentErr.style.display = 'block';
+        consentErr.style.color = '#ef4444';
+        consentErr.style.fontSize = '0.78rem';
+        hasError = true;
+      }
+
+      if (hasError) {
+        // Scroll to first error
+        const firstError = document.querySelector('.form-input[style*="ef4444"], .form-select[style*="ef4444"]');
+        if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          style="animation:spin 1s linear infinite" aria-hidden="true">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+        </svg>
+        Sending…
+      `;
+
+      // Simulate send (replace with actual Formspree submission if backend configured)
+      setTimeout(() => {
+        form.style.display    = 'none';
+        success.style.display = 'block';
+        success.focus();
+      }, 1400);
+    });
+
+    // ── Reset form ──
+    function resetForm() {
+      form.reset();
+      clearErrors();
+      form.style.display    = 'block';
+      success.style.display = 'none';
+      submitBtn.disabled    = false;
+      submitBtn.innerHTML   = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+        Send Message
+      `;
+      document.getElementById('message-counter').textContent = '0 / 20 min';
+      document.getElementById('message-counter').className   = 'char-counter';
+      form.querySelector('#cf-name').focus();
+    }
+  </script>
+</body>
+</html>
