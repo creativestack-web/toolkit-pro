@@ -64,4 +64,4 @@ User-agent: DataForSeoBot
 Disallow: /
 
 # ── Sitemap location ──
-Sitemap:https://creativestack-web.github.io/toolkit-pro/sitemap.xml
+Sitemap: https://creativestack-web.github.io/toolkit-pro/sitemap.xml
