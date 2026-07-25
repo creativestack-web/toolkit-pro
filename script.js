@@ -10,31 +10,35 @@ const themeBtn   = document.getElementById('theme-toggle');
 const themeIcon  = document.getElementById('theme-icon');
 const savedTheme = localStorage.getItem('tkp-theme') || 'dark';
 html.setAttribute('data-theme', savedTheme);
-themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
-themeBtn.addEventListener('click', () => {
+if (themeIcon) themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+if (themeBtn) themeBtn.addEventListener('click', () => {
   const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   html.setAttribute('data-theme', next);
   localStorage.setItem('tkp-theme', next);
-  themeIcon.textContent = next === 'dark' ? '🌙' : '☀️';
+  if (themeIcon) themeIcon.textContent = next === 'dark' ? '🌙' : '☀️';
 });
 
 // ══════════════════════════════════════════
 //  2. NAVBAR SCROLL SHADOW
 // ══════════════════════════════════════════
 window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  const navbarEl = document.getElementById('navbar');
+  if (navbarEl) navbarEl.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
 // ══════════════════════════════════════════
 //  3. MOBILE DRAWER
 // ══════════════════════════════════════════
-document.getElementById('hamburger').addEventListener('click', () => {
-  document.getElementById('mobile-drawer').classList.toggle('open');
-  document.getElementById('drawer-overlay').classList.toggle('open');
-});
+const hamburgerBtn = document.getElementById('hamburger');
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', () => {
+    document.getElementById('mobile-drawer')?.classList.toggle('open');
+    document.getElementById('drawer-overlay')?.classList.toggle('open');
+  });
+}
 function closeDrawer() {
-  document.getElementById('mobile-drawer').classList.remove('open');
-  document.getElementById('drawer-overlay').classList.remove('open');
+  document.getElementById('mobile-drawer')?.classList.remove('open');
+  document.getElementById('drawer-overlay')?.classList.remove('open');
 }
 
 // ══════════════════════════════════════════
@@ -42,7 +46,9 @@ function closeDrawer() {
 // ══════════════════════════════════════════
 function showPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + id).classList.add('active');
+  const target = document.getElementById('page-' + id);
+  if (!target) return;
+  target.classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function showTool(toolId) {
@@ -193,6 +199,7 @@ const currencyNames={
   INR:'🇮🇳 Indian Rupee',CAD:'🇨🇦 Canadian Dollar',AUD:'🇦🇺 Australian Dollar'
 };
 function convertCurrency(){
+  if(!document.getElementById('cur-val'))return;
   const v=parseFloat(document.getElementById('cur-val').value);
   const f=document.getElementById('cur-from').value;
   const t=document.getElementById('cur-to').value;
@@ -612,7 +619,8 @@ function calculateBMI(){
 // ══════════════════════════════════════════
 //  12. AGE CALCULATOR
 // ══════════════════════════════════════════
-document.getElementById('dob-input').max=new Date().toISOString().split('T')[0];
+const dobInputEl = document.getElementById('dob-input');
+if (dobInputEl) dobInputEl.max = new Date().toISOString().split('T')[0];
 
 function calculateAge(){
   const val=document.getElementById('dob-input').value;
@@ -767,6 +775,7 @@ function calcGPA(){
 //  16. PASSWORD GENERATOR
 // ══════════════════════════════════════════
 function generatePassword(){
+  if(!document.getElementById('pw-length'))return;
   const len=parseInt(document.getElementById('pw-length').value);
   const upper=document.getElementById('pw-upper').checked;
   const lower=document.getElementById('pw-lower').checked;
