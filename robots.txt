@@ -1,6 +1,6 @@
 # ============================================================
 # robots.txt — ToolKit Pro
-# https://creativestack-web.github.io/toolkit-pro/
+# https://https://toolstack-pro.netlify.app/
 # ============================================================
 
 # ── All well-behaved crawlers ──
@@ -64,4 +64,4 @@ User-agent: DataForSeoBot
 Disallow: /
 
 # ── Sitemap location ──
-Sitemap: https://creativestack-web.github.io/toolkit-pro/sitemap.xml
+Sitemap: https://https://toolstack-pro.netlify.app/sitemap.xml
