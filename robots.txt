@@ -2,7 +2,7 @@
 
 User-agent: *
 Allow: /
-
+ 
 # Block private/configuration directories
 Disallow: /.git/
 Disallow: /.github/
