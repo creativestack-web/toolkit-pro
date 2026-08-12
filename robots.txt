@@ -1,47 +1,38 @@
-# ============================================================
-# robots.txt — ToolKit Pro
-# https://toolstack-pro.netlify.app/
-# ============================================================
+# ToolKit Pro robots.txt
 
-# ── All well-behaved crawlers ──
 User-agent: *
 Allow: /
 
-# Block access to any config or hidden files if they exist
+# Block private/configuration directories
 Disallow: /.git/
 Disallow: /.github/
 Disallow: /node_modules/
-Disallow: /*.json$
-Disallow: /*.md$
 
-# ── Google ──
+# Google
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 2
 
-# ── Google Images ──
+# Google Images
 User-agent: Googlebot-Image
 Allow: /
 
-# ── Google AdSense ──
+# Google AdSense
 User-agent: Mediapartners-Google
 Allow: /
 
-# ── Bing ──
+# Bing
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 5
 
-# ── DuckDuckGo ──
+# DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
 
-# ── Yahoo ──
+# Yahoo
 User-agent: Slurp
 Allow: /
-Crawl-delay: 5
 
-# ── Block bad/scraper bots ──
+# Block selected crawlers
 User-agent: AhrefsBot
 Disallow: /
 
@@ -63,5 +54,5 @@ Disallow: /
 User-agent: DataForSeoBot
 Disallow: /
 
-# ── Sitemap location ──
+# Sitemap
 Sitemap: https://toolstack-pro.netlify.app/sitemap.xml
